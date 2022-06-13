@@ -1,0 +1,32 @@
+
+.background {
+    /* image url  */
+    background-image: url("/img/background.png");
+    width: auto;
+    /* make the image full height */
+    height: 100%;
+
+  
+    /* center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* use the following only if if you are able to scroll past the image to see a white area (this is the <body> peeking out) above or below the image */
+    overflow: hidden;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 3em;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .heropart{
+    margin: 10vh 0;
+
+  }
+
+  footer{
+      background-color: #0071CE;
+  }

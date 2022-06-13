@@ -1,0 +1,35 @@
+:root {
+    --nav-bg-color: #441633;
+    --nav-link-color: rgb(255, 255, 255);
+    --nav-hover-color: rgb(255, 231, 153);
+    --info-bg-color: rgb(255, 255, 255);
+    --info-main-color: rgb(37, 43, 45);
+    --info-secondary-color: #999999;
+    --nft-bg-color: #0071CE;
+    --nft-title-color: white;
+    --nft-text-color: rgb(254 206 98);
+    --nft-text-order: 1;
+    --about-bg-color: #d39090;
+    --about-text-color: #441633;
+    --about-title-color: #feffc8;
+    --about-text-order: 2;
+    --team-bg-color: #FFC220;
+    --team-name-color: rgb(21 58 71);
+    --team-title-color: rgb(255 255 255);
+    --roadmap-bg-color: #0071CE;
+    --roadmap-title-color: white;
+    --roadmap-box-title-color: rgb(205 122 68);
+    --roadmap-box-text-color: rgb(58 32 9);
+    --roadmap-box-color: #f1e7cf;
+    --roadmap-timeline-color: #1b637f;
+    --faq-bg-color: #29697a;
+    --faq-title-color: #ffffff;
+    --faq-question-color: rgb(254 206 98);
+    --faq-answer-color: rgb(238 235 222);
+    --btn-bg-color: #4f94cf;
+    --btn-text-color: #ffffa2;
+    --btn-border-color: #a5d6ff;
+    --btn-hover-bg-color: rgb(0, 0, 0);
+    --btn-hover-text-color: rgb(255, 255, 255);
+    --btn-hover-border-color: rgb(0, 0, 0)
+}

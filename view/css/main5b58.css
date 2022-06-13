@@ -1,0 +1,438 @@
+body, html {
+	height:100%;
+	margin:0;
+	padding:0;
+	background-color: var(--nav-bg-color);
+	color:white;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Rajdhani, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+.notfound {
+	text-align: center;
+}
+.notfound p {
+	opacity: 0.75;
+}
+
+.main {
+	text-align: center;
+	width: 95%;
+	max-width:1200px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 0px;
+	margin:0 auto;
+	flex-wrap: wrap;
+}
+
+.main .left {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width:512px;
+	max-width: 100%;
+	padding:10px;
+}
+
+.main .right {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width:512px;
+	max-width: 100%;
+	padding:10px;
+}
+
+
+.btn {
+	font-family: 'Staatliches', Arial;
+	background: var(--btn-bg-color);
+	border: 3px solid var(--btn-border-color);
+	color: var(--btn-text-color);
+	box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+	display: block;
+	padding: 15px 10px;
+	border-radius: 10px;
+	font-size: 1.3em;
+	text-decoration: none;
+	background: rgb(33, 184, 85);
+	border-color: rgb(222, 255, 122);
+	color: rgb(255, 255, 255);
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+	margin-top:10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 1em;
+	text-align: center;
+}
+
+.btn:hover {
+	cursor: pointer;
+	transform: rotate(-2deg) scale(1.1);
+	background: var(--btn-hover-bg-color);
+	border: 3px solid var(--btn-hover-border-color);
+	color: var(--btn-hover-text-color);
+}
+
+.killa-nr {
+	font-family: 'Staatliches', Arial;
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+
+.hidden {
+	display:none !important;
+}
+
+.nft-img, .video-container {
+	aspect-ratio: 1;
+	width:512px;
+	max-width: 100%;
+	border: 4px solid white;
+    box-shadow: 5px 5px 0px rgb(0 0 0 / 20%);
+	border-radius: 20px;
+	margin-bottom:10px;
+}
+
+.video-container {
+	display: flex;
+	overflow:hidden;
+}
+
+.logo {
+	width:200px;
+	margin-bottom:20px;
+}
+
+.btns {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: stretch;
+	margin:-5px;
+	margin-bottom:5px;
+}
+
+.btns .btn i {
+	margin-right:10px;
+}
+
+.btns .btn {
+	flex-grow: 6;
+}
+
+.btns .btn-os {
+	width:100%;
+	flex-grow: 1;
+}
+
+.btns .btn-tweet i {
+	margin-right:0px;
+	min-width: 25px;
+}
+
+.btns>* {
+	margin:5px;
+}
+
+.sharethis-inline-share-buttons {
+	width: 100% !important;
+}
+
+.st-btn {
+    border: 2px solid white;
+    border-radius: 10px;
+    background: #1da1f2;
+    font-family: 'Staatliches', Arial;
+    font-size: 1.3em !important;
+    height: unset;
+}
+
+.visuals {
+	position:relative;
+}
+
+.btn-arrow {
+	position: absolute;
+	height:40px;
+	width:40px;
+	background-color:#20b854;
+	top:calc(50% - 20px);
+	border-radius: 100px;
+	border:3px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	color:white;
+	text-decoration: none;
+	transform: scale(1);
+	transition: all 0.3s ease;
+}
+
+.prev {
+	left:-20px;
+}
+
+.next {
+	right:-20px;
+}
+
+.btn-arrow:hover {
+	transform: scale(1.2);
+}
+
+.btn-tweet, .btn-os {
+	background: #1DA1F2;
+	border: 3px solid white;
+    /*font-size: 1em;*/
+}
+
+.btn-tweet:hover, .btn-os:hover {
+	background: #0e7dc2;
+}
+
+
+.overall-stats {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom:10px;
+}
+
+.overall-stats h2 {
+	font-size: 0.8em;
+	margin: 0px;
+	color:#999;
+}
+
+.overall-stats span {
+	font-family: 'Staatliches', Arial;
+	font-size: 2em;
+	color:yellow;
+}
+
+.bear-stats {
+	min-width:420px;
+	max-width:420px;
+	float: right;
+	padding: 25px;
+	padding-left: 0px;
+}
+
+.bear-traits {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.bear-stat {
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:8px;
+	width: calc(50% - 10px);
+}
+
+.bear-stat .title {
+	font-weight: bold;
+	color: #333;
+	font-size: 0.8em;
+	font-family: 'Staatliches', Arial;
+}
+
+.stats {
+	padding:10px;
+	border-radius: 10px;
+	font-size:1.5em;
+	background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: 16px;
+    background: #852de8;
+    border-radius: 5px;
+    color: white;
+}
+
+.stat-header {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom:1px;
+}
+
+.stat-score {
+    font-size: 16px;
+	color:black;
+}
+
+.beta {
+    background-color: #a50000;
+    padding: 3px;
+    color: white;
+    border: 3px solid red;
+    border-radius: 5px;
+	margin-left:8px;
+	font-weight: bold;
+}
+
+.stats-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Staatliches', Arial;
+	font-size: 1.5em;
+	line-height: 1em;
+}
+
+.form {
+	display: flex;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form span {
+	white-space: nowrap;
+	width: 100%;
+	text-align: left;
+	display: flex;
+	align-items: center;
+}
+
+.form>input {
+	width: 100%;
+	margin-right: 10px;
+	border:none;
+	padding:10px;
+	border-radius: 5px;
+}
+
+.form>.btn {
+	margin-top:0;
+	padding: 5px 10px;
+}
+
+
+
+
+
+/* MODAL */
+
+.modal {
+	font-size:1.5em;
+	z-index: 99999;
+	background-color: rgba(18, 4, 39, 0.85);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.modal .popup {
+	background-color: #6c329c;
+	padding: 40px 20px;
+	margin: 20px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+	border: 3px solid #ca8af1;
+	max-width: 100%;
+
+	transform: scale(0);
+
+	animation-name: modal;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+
+}
+
+.modal .message {
+	margin-bottom: 20px;
+	color: white;
+	max-width: 380px;
+	font-family: 'Staatliches', cursive;
+}
+
+.modal .footnote {
+	color: white;
+	max-width: 500px;
+	font-family: 'Staatliches', cursive;
+	font-size: 0.75em;
+	opacity: 0.75;
+}
+
+.modal.overlay .message {
+	margin-bottom: 0;
+}
+
+.modal .popup .btn {
+	background: #ff994e;
+	border-color: #fff7d6;
+	color: #fff7d6;
+	margin: 10px 0px;
+}
+
+.modal .popup .btn:hover {
+	background: #cb6b25;
+	border-color: #fff7d6;
+	color: #fff7d6;
+	transform: rotate(-2deg);
+}
+
+@keyframes modal {
+	0% {
+		transform: scale(0) rotate(-10deg);
+	}
+
+	50% {
+		transform: scale(1.2) rotate(4deg);
+	}
+
+	100% {
+		transform: scale(1) rotate(0deg);
+	}
+}
+
+
+.modal .popup .btn-close {
+	background: #4a3c56;
+	font-size: 1em;
+}
+
+.modal .popup .btn-close:hover {
+	background: #2a2330;
+}
+
+.modal .popup .btn-tweet {
+	background: #1DA1F2;
+	/*font-size: 1em;*/
+}
+
+.modal .popup .btn-tweet:hover {
+	background: #0e7dc2;
+}
